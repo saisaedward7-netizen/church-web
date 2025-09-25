@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sermons - Sentinels Call Ministries</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1a2a6c;
+      --gold: #c89b3a;
+      --light-bg: #f8f9fa;
+      --text-dark: #333;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light-bg);
+      margin: 0;
+      color: var(--text-dark);
+    }
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: var(--navy);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .sermons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .sermon-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .sermon-card iframe, .sermon-card audio {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .sermon-card h3 {
+      margin-bottom: 10px;
+    }
+    .sermon-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 8px;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .download-btn:hover {
+      background: white;
+    }
+    footer {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Sermons</h1>
+    <nav>
+      <a href="Home page.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="ministries.html">Ministries</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Latest Sermons</h2>
+    <p style="text-align:center; max-width:700px; margin: 0 auto 30px;">Watch, listen, or download our recent sermons and be encouraged in your faith.</p>
+
+    <div class="sermons-grid">
+      <div class="sermon-card">
+        <iframe src="https://www.youtube.com/embed/sample1" frameborder="0" allowfullscreen></iframe>
+        <h3>Walking in Faith</h3>
+        <p>Pastor John - September 2025</p>
+        <audio controls>
+          <source src="audio/walking-in-faith.mp3" type="audio/mpeg">
+        </audio>
+        <a class="download-btn" href="audio/walking-in-faith.mp3" download>Download Audio</a>
+      </div>
+
+      <div class="sermon-card">
+        <iframe src="https://www.youtube.com/embed/sample2" frameborder="0" allowfullscreen></iframe>
+        <h3>The Power of Prayer</h3>
+        <p>Pastor Mary - September 2025</p>
+        <audio controls>
+          <source src="audio/power-of-prayer.mp3" type="audio/mpeg">
+        </audio>
+        <a class="download-btn" href="audio/power-of-prayer.mp3" download>Download Audio</a>
+      </div>
+
+      <div class="sermon-card">
+        <iframe src="https://www.youtube.com/embed/sample3" frameborder="0" allowfullscreen></iframe>
+        <h3>Living with Purpose</h3>
+        <p>Pastor James - August 2025</p>
+        <audio controls>
+          <source src="audio/living-with-purpose.mp3" type="audio/mpeg">
+        </audio>
+        <a class="download-btn" href="audio/living-with-purpose.mp3" download>Download Audio</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sentinels Call Ministries | Nairobi, Kenya</p>
+  </footer>
+</body>
+</html>
